@@ -28,6 +28,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <vertx.version>4.0.2</vertx.version>
+    <cluster-manager>vertx-hazelcast</cluster-manager>
     <junit-jupiter.version>5.7.0</junit-jupiter.version>
   </properties>
 
@@ -50,7 +51,7 @@
     </dependency>
     <dependency>
       <groupId>io.vertx</groupId>
-      <artifactId>vertx-hazelcast</artifactId>
+      <artifactId>${cluster-manager}</artifactId>
     </dependency>
 
     <dependency>
